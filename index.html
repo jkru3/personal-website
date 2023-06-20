@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joey Krueger</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container mx-auto my-sm-3">
+    <header class="my-3 mx-md-1 p-4 background">
+      <div class="row">
+        <div class="d-none d-sm-block col-12">
+          <h1 class="text-center m-auto">Hey, I'm Joey</h1>
+        </div>
+        <div class="d-sm-none d-block col-7">
+          <h1 class="text-center mt-4 p-3">Hey,</h1>
+          <h1 class="text-center mt-3 ">I'm Joey</h1>
+        </div>
+        <div class="col-5 d-sm-none text-sm-right">
+          <img src="assets/profile-picture.jpg" alt="Profile Picture" class="img-fluid rounded-circle">
+        </div>
+      </div>
+    </header>
+
+    <section class="my-3 mx-md-3 p-4 background" id="intro">
+      <div class="col-12">
+        <p>I'm a lifelong learner, and prior to returning to school to study Computer Science, I had the privilege of traveling the country and making music. To support myself, I worked in the restaurant industry for almost 6 years, before finally deciding to pivot to what I knew in my heart was where my skills and passions aligned.
+        <p>Since resuming my studies at the University of Washington, I've taken classes that have rigorously challenged my reasoning and problem-solving skills in ways I couldn't have imagined. I've also had the opportunity to teach students just starting their tech journey, the same one I had the privilege of starting back in January of 2022 when I wrote my first line of code.</p>
+        <p>My favorite part of software development is building things. I've been building app designs and coming up with project ideas long before I started coding. The only difference now is that I have the skills to build them! In October 2022, three of my fellow transfer students and I built an application that translates novels into AI-generated picture books in the DubHacks hackathon and placed as finalists amongst 455 contestants. In April of the following year, we participated in the Dempsey Startup Competition, where we designed an application that translates a speaker's voice in a video to another language recreated on a vocal model of the speaker. In doing so, we had the opportunity to present and get advice from hundreds of judges about the business decisions it takes to get a startup off the ground.</p>
+        <p>As an engineer, I'm always open to talking with people interested in the latest technology, ideas, and design patterns. If that's you, let's connect!</p>
+      </p>
+      </div>
+    </section>
+    
+    <section class="my-3 mx-md-1 p-4 background" id="about">
+      <div class="container">
+        <div class="row flex-md-row d-md-flex">
+          <div class="d-none d-sm-block col-sm-6 image-container d-flex align-items-stretch">
+            <img src="assets/full-portrait.jpg" alt="Large Picture" class="img-fluid">
+          </div>
+          <div class="col-sm-6 d-flex align-items-stretch">
+            <div class="row h-100 w-100 align-items-center">
+              <div class="project-container h-100 w-100 d-flex flex-column">
+                <h2 class="d-none d-md-block">Some of my projects include...</h2>
+                <div class="card project shadow-sm h-33 my-3 p-2 p-md-3 p-lg-4 min-card-height" id="card1">
+                  <h3 class="card-title text-center">ClearVote</h3>
+                  <p class="card-text"></p>
+                  <p class="read-more text-nowrap">Read more...</p>
+                </div>
+                <div class="card project shadow-sm h-33 my-3 p-2 p-md-3 p-lg-4 min-card-height" id="card2">
+                  <h3 class="card-title text-center">AutoDubs</h3>
+                  <p class="card-text"></p>
+                  <p class="read-more text-nowrap">Read more...</p>
+                </div>
+                <div class="card project shadow-sm h-33 my-3 p-2 p-md-3 p-lg-4 min-card-height" id="card3">
+                  <h3 class="card-title text-center">IllustrAItor</h3>
+                  <p class="card-text"></p>
+                  <p class="read-more text-nowrap">Read more...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </section>
+
+    <!-- The Modals -->
+    <div id="myModal1" class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <p>Some text in the Modal..</p>
+      </div>
+    </div>
+    <div id="myModal2" class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <p>Some text in the Modal..</p>
+      </div>
+    </div>
+    <div id="myModal3" class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <p>Some text in the Modal..</p>
+      </div>
+    </div>
+
+    <section class="my-3 mx-md-3 p-4 background" id="skills">
+      <p>I've have skills in Design Patterns, Design Thinking, .NET Core, C#, Angular, TypeScript, Next.js, React, Node.js,
+        Java, Python, C, HTML, CSS, Bootstrap 5, Vim, Figma, UX, Git, GitHub, Gitlab, Ubuntu Linux,
+        Bash Shell, LaTeX.</p>
+      <p class="text-center">If you're interested in learning more about what I can do for your business, check out my CV:</p>
+      <a href="assets/resume.pdf" download class="btn btn-outline-primary shadow-sm col-md-2 offset-md-5 col-10 offset-1">Resume</a>
+    </section>
+
+    <section class="my-3 mx-md-1 p-4 background" id="contact">
+      <h3 class="text-center flex-wrap p-3">Want to talk? Feel free to send me an email</h3>
+      
+      <form class="row p-3" action="/send-email" method="post">
+        <div class="mb-3 col-md-8 offset-md-2">
+          <input type="text" class="form-control shadow-sm" placeholder="Your name" id="name" name="name">
+        </div>
+        <div class="mb-3 col-md-8 offset-md-2">
+          <input type="text" class="form-control shadow-sm" placeholder="Your email address" id="email" name="email">
+        </div>
+        <div class="mb-3 col-md-8 offset-md-2">
+          <textarea placeholder="Your message" class="form-control shadow-sm" placeholder="Your message" id="message" name="message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-outline-primary shadow-sm col-md-2 offset-md-5 col-10 offset-1">Send</button>
+      </form>
+      
+      <h3 class="text-center flex-wrap p-3">Or, find me on my socials</h3>
+      
+      <div class="d-flex justify-content-center">
+        <a href="https://www.linkedin.com/in/jkru3/" target="_blank" class="p-2">
+          <i class="fa-brands fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://www.github.com/jkru3/" target="_blank" class="p-2">
+          <i class="fa-brands fa-github fa-2x"></i>
+        </a>
+        <a href="https://twitter.com/_Joey_Laurent_" target="_blank" class="p-2">
+          <i class="fa-brands fa-twitter fa-2x"></i>
+        </a>
+      </div>
+    </section>
+
+    <footer class="my-3 text-center mx-md-3">
+      <span>&copy; </span>
+      <span id="year">year</span>
+      <span>Joseph Laurent Krueger.</span>
+    </footer>
+
+  </div>
+</body>
+
+<script src="https://kit.fontawesome.com/8c8ef345c9.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</html>
