@@ -10,56 +10,29 @@ function getCurrentYear() {
 }
 
 /**
- * creates modals
+ * If the fields are filled, the spinner will activate
  */
-const modals = {
-  card1: document.getElementById("myModal1"),
-  card2: document.getElementById("myModal2"),
-  card3: document.getElementById("myModal3")
-};
+document.getElementById('myForm').addEventListener('submit', function(event) {
 
-const cards = ["card1", "card2", "card3"];
+  let email = document.getElementById('email').value;
+  let name = document.getElementById('name').value;
+  let message = document.getElementById('message').value;
 
-cards.forEach((cardId) => {
-  let card = document.getElementById(cardId);
-  card.onclick = function() {
-    let modal = modals[cardId];
-    modal.style.display = "flex";
-    let overlay = modal.getElementsByClassName("modal-overlay")[0];
-    let content = modal.getElementsByClassName("modal-content")[0];
-    setTimeout(function() {
-      overlay.style.opacity = "1";
-      content.style.transform = "scale(1)";
-      content.style.opacity = "1"; // Fade in the content
-    }, 10);  // Trigger the transition effect
-  };
+  if (email && name && message) {
+    document.getElementById('sendEmail').innerHTML = `
+      <div class="spinner-border small-spinner text-primary-emphasis" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    `;
+  }
 });
 
-let closes = document.getElementsByClassName("close");
-for (let i = 0; i < closes.length; i++) {
-  let close = closes[i];
-  close.onclick = function(event) {
-    let modal = event.target.parentElement.parentElement;
-    let overlay = modal.getElementsByClassName("modal-overlay")[0];
-    let content = modal.getElementsByClassName("modal-content")[0];
-    overlay.style.opacity = "0";
-    content.style.transform = "scale(0.7)";
-    content.style.opacity = "0"; // Fade out the content
-    setTimeout(function() {
-      modal.style.display = "none";
-    }, 500);  // Wait for the transition effect to complete
-  };
-}
-
-window.onclick = function(event) {
-  if (event.target.className === "modal-overlay") {
-    let modal = event.target.parentElement;
-    let content = modal.getElementsByClassName("modal-content")[0];
-    event.target.style.opacity = "0";
-    content.style.transform = "scale(0.7)";
-    content.style.opacity = "0"; // Fade out the content
-    setTimeout(function() {
-      modal.style.display = "none";
-    }, 500);  // Wait for the transition effect to complete
-  }
-};
+/**
+ * creates modals
+ */
+$(document).ready(function(){
+  $(".card").click(function(){
+      let cardId = $(this).attr('id');
+      $("#" + cardId + "Modal").modal('show');
+  });
+});

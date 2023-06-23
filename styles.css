@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url("assets/background-image.jpg");
+  background-image: url("assets/images/background-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -62,15 +62,63 @@ body {
 }
 
 /* For project cards */
+.card {
+  overflow: hidden;
+  position: relative;
+}
+
+.card-text {
+  position: absolute;
+  top: 35px; /* Adjust the value as needed */
+  left: 15px;
+  right: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+}
+
+@media (min-width: 768px) {
+  /* Medium devices (md) and up */
+  .card-text {
+    top: 50px; /* Top position for md viewport */
+    left: 20px;
+    right: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Large devices (lg) and up */
+  .card-text {
+    top: 65px; /* Top position for lg viewport */
+    left: 25px;
+    right: 25px;
+    font-size: large;
+  }
+}
+
 .min-card-height {
   min-height: 70px;
 }
 
 .card.project {
   height: 25%;
-  overflow: hidden;
   position: relative;
   overflow: hidden; /* ensures the overlay doesn't extend beyond the card boundaries */
+}
+
+.card.project::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom, 
+    rgba(255,255,255,0) 50%, 
+    rgba(255,255,255,1) 90%
+  );
+  pointer-events: none; /* so the content is still clickable/interactable */
 }
 
 .card.project h3,
@@ -117,57 +165,29 @@ body {
   transform: translate(-50%, -30%) scale(1.1);
 }
 
+/* Spinner */
+.small-spinner {
+  width: 2px;
+  height: 2px;
+  border-width: 0.2em;
+}
+
 /* Modal */
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  padding: 16px;
-  box-sizing: border-box;
   align-items: center;
   justify-content: center;
+  display: flex; /* Add this line to enable flexbox */
 }
 
-.modal-overlay {
-  position: fixed;
-  background-color: rgba(0,0,0,0.3);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  transition: opacity 0.5s;
+.modal-dialog {
+  margin: 0 auto; /* Center horizontally */
+  width: auto;
+  max-width: 90%;
+  height: 90%;
+  overflow-y: auto;
 }
 
-.modal-content {
-  background-color: #fefefe;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 50%; /* Change this as per your requirement */
-  transform: scale(0.7); /* Initialize with smaller size */
-  transition: transform 0.5s; /* Add transition for scaling effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-@keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
-}
-
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
+.modal-body {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }

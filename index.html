@@ -5,14 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joey Krueger</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container mx-auto my-sm-3">
-    <header class="my-3 mx-md-1 p-4 background">
+    <header class="my-3 mx-md-4 p-4 background">
       <div class="row">
         <div class="d-none d-sm-block col-12">
           <h1 class="text-center m-auto">Hey, I'm Joey</h1>
@@ -22,18 +20,16 @@
           <h1 class="text-center mt-3 ">I'm Joey</h1>
         </div>
         <div class="col-5 d-sm-none text-sm-right">
-          <img src="assets/profile-picture.jpg" alt="Profile Picture" class="img-fluid rounded-circle">
+          <img src="assets/images/profile-picture.jpg" alt="Profile Picture" class="img-fluid rounded-circle">
         </div>
       </div>
     </header>
 
     <section class="my-3 mx-md-3 p-4 background" id="intro">
       <div class="col-12">
-        <p>I'm a lifelong learner, and prior to returning to school to study Computer Science, I had the privilege of traveling the country and making music. To support myself, I worked in the restaurant industry for almost 6 years, before finally deciding to pivot to what I knew in my heart was where my skills and passions aligned.
-        <p>Since resuming my studies at the University of Washington, I've taken classes that have rigorously challenged my reasoning and problem-solving skills in ways I couldn't have imagined. I've also had the opportunity to teach students just starting their tech journey, the same one I had the privilege of starting back in January of 2022 when I wrote my first line of code.</p>
-        <p>My favorite part of software development is building things. I've been building app designs and coming up with project ideas long before I started coding. The only difference now is that I have the skills to build them! In October 2022, three of my fellow transfer students and I built an application that translates novels into AI-generated picture books in the DubHacks hackathon and placed as finalists amongst 455 contestants. In April of the following year, we participated in the Dempsey Startup Competition, where we designed an application that translates a speaker's voice in a video to another language recreated on a vocal model of the speaker. In doing so, we had the opportunity to present and get advice from hundreds of judges about the business decisions it takes to get a startup off the ground.</p>
-        <p>As an engineer, I'm always open to talking with people interested in the latest technology, ideas, and design patterns. If that's you, let's connect!</p>
-      </p>
+        <p>I practice the fine art of software engineering with a passion for design patterns, natural language processing, and 2000's era web design. However, my main interest in computer science (and to a greater extent, life itself) is figuring out how to make things work. As it turns out, a lot of things in this world <i>don't</i> work, so there is always something keeping me busy!</p>
+        <p>In the past I've made some apps, participated in (and won) a few hackathons and competitions, composed an <a href="https://open.spotify.com/album/7Llsm8e0e6zcKQDvMasFCm?si=x9fvJiakTKmCezkm-Xt5Dg" target="_blank">album<a>, and traveled the continent in a beat-up van. As of lately, my focus is full speed ahead in becoming the best software engineer I can be. Right now, that means building my career and studying computer science University of Washington.</p>
+        <p>Whether you are a prospective recruiter or a secret admirer, you'd like to know more, check out some of my projects below</p>
       </div>
     </section>
     
@@ -41,7 +37,7 @@
       <div class="container">
         <div class="row flex-md-row d-md-flex">
           <div class="d-none d-sm-block col-sm-6 image-container d-flex align-items-stretch">
-            <img src="assets/full-portrait.jpg" alt="Large Picture" class="img-fluid">
+            <img src="assets/images/full-portrait.jpg" alt="Large Picture" class="img-fluid">
           </div>
           <div class="col-sm-6 d-flex align-items-stretch">
             <div class="row h-100 w-100 align-items-center">
@@ -49,17 +45,17 @@
                 <h2 class="d-none d-md-block">Some of my projects include...</h2>
                 <div class="card project shadow-sm h-33 my-3 p-2 p-md-3 p-lg-4 min-card-height" id="card1">
                   <h3 class="card-title text-center">ClearVote</h3>
-                  <p class="card-text"></p>
+                  <p class="card-text">ClearVote scrapes the web for information on local election candidates and uses sentiment analysis with machine learning to make predictions about their values</p>
                   <p class="read-more text-nowrap">Read more...</p>
                 </div>
                 <div class="card project shadow-sm h-33 my-3 p-2 p-md-3 p-lg-4 min-card-height" id="card2">
                   <h3 class="card-title text-center">AutoDubs</h3>
-                  <p class="card-text"></p>
+                  <p class="card-text">AutoDubs is a web app that takes in a video file and a desired language as input and returns a video with audio that is translated into the desired language with a model of the speaker's voice. It uses a Restful API call to create the vocal model and Python on the backend to translate the video.</p>
                   <p class="read-more text-nowrap">Read more...</p>
                 </div>
                 <div class="card project shadow-sm h-33 my-3 p-2 p-md-3 p-lg-4 min-card-height" id="card3">
                   <h3 class="card-title text-center">IllustrAItor</h3>
-                  <p class="card-text"></p>
+                  <p class="card-text">IllustrAItor is a simple application that takes in the PDFs of novels, summarizes large chunks of text, and then passes the text into Dream Studio's Stable Diffusion Image Generation API to illustrate it into a picture book. The idea was brainstormed during the hackathon DubHacks at the University of Washington. With a small team of 4, my friends and I designed, prototyped, and coded the project before presenting it to a rotating panel of judges. We placed as finalists in the competition.</p>
                   <p class="read-more text-nowrap">Read more...</p>
                 </div>
               </div>
@@ -68,49 +64,56 @@
         </div>
       </div>      
     </section>
+    
+    <div class="modal fade row" id="card1Modal" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+      <div class="modal-dialog d-flex align-items-center justify-content-center" role="document">
+        <div class="modal-content p-3">
+          <p>ClearVote scrapes the web for information on local election candidates and uses sentiment analysis with machine learning to make predictions about their values. This information enables prospective voters to quickly survey prospective candidates that align with their values and make more informed votes at the ballot box. A prototype of the project can be found <a href="https://www.figma.com/file/khHOncKNOxunoqjbRw8GS3/ClearVote?type=design&node-id=5%3A257&mode=design&t=dF7OqxgA3qdW3xTg-1" target="_blank">here</a></p>
+          <p>Whether or not this product is marketable is irrelevant to me. Local votes have a high impact on the daily lives of people all over the world. Making it easier for people to make informed voting decisions fosters true democracy, which has the potential to greatly increase <i>everyone's</i> quality of life.</p>
+          <p>However, there is still a ton of work to do before an MVP is remotely usable. Please check back later in the Summer! This is a project I've been working on for well over a year now, and it has consistently been deprioritized by work, school, and frankly, a lack of skill. But that's part of what makes this project so exciting. Every month that goes by, I can take whatever I've been learning and apply it. This project requires many disciplines of expertise to pull off, including NLP, web scraping, and scalable, full-stack web development. Knowing that there is always something more to learn to complete this project is what drives me to be the best engineer I can be. </p>
+        </div>
+      </div>
+    </div>
 
-    <!-- The Modals -->
-    <div id="myModal1" class="modal">
-      <div class="modal-overlay"></div>
-      <div class="modal-content">
-        <p>Some text in the Modal..</p>
+    <div class="modal fade row" id="card2Modal" tabindex="-2" role="dialog" aria-labelledby="modal2Label" aria-hidden="true">
+      <div class="modal-dialog d-flex align-items-center justify-content-center" role="document">
+        <div class="modal-content p-3">
+          <p><a href="https://autodubbed.com/" target="_blank">AutoDubs</a> is a web app that takes in a video file and a desired language as input and returns a video with audio that is translated into the desired language with a model of the speaker's voice. It uses a Restful API call to create the vocal model and Python on the backend to translate the video. We have a few examples of the result here on our website and the source code can be found <a href="https://github.com/jkru3/translAItor" target="_blank">here</a>.</p>
+          <p>My friend Elias Belzberg and I were exploring possible use cases of the speech synthesis API Whisper by ElevenLabs. We realized that there are many marketable use cases for translating the audio into content like YouTube videos and decided to enter the Dempsey Startup Competition at the University of Washington.</p>
+          <p>In doing so, we were selected to participate in an in-person round of judging from a pool of over 100 contesting teams. We learned a ton about what it takes to create a successful startup. This includes writing an 8-page business plan and meeting with hundreds of prospective investors who had plenty of advice to give about the marketability of the technology, constructive feedback, and entrepreneurship.</p>
+        </div>
       </div>
     </div>
-    <div id="myModal2" class="modal">
-      <div class="modal-overlay"></div>
-      <div class="modal-content">
-        <p>Some text in the Modal..</p>
-      </div>
-    </div>
-    <div id="myModal3" class="modal">
-      <div class="modal-overlay"></div>
-      <div class="modal-content">
-        <p>Some text in the Modal..</p>
+
+    <div class="modal fade row" id="card3Modal" tabindex="-3" role="dialog" aria-labelledby="modal3Label" aria-hidden="true">
+      <div class="modal-dialog d-flex align-items-center justify-content-center" role="document">
+        <div class="modal-content p-3">
+          <p>IllustrAItor is a simple application that takes in the PDFs of novels, summarizes large chunks of text, and then passes the text into Dream Studio's Stable Diffusion Image Generation API to illustrate it into a picture book.</p>
+          <p>The idea was brainstormed during the hackathon DubHacks at the University of Washington. With a small team of 4, my friends and I designed, prototyped, and coded the project before presenting it to a rotating panel of judges. We placed as finalists in the competition. More information about the project can be found <a href="https://devpost.com/software/illustraitor" target="_blank">here</a>.</p>
+        </div>
       </div>
     </div>
 
     <section class="my-3 mx-md-3 p-4 background" id="skills">
-      <p>I've have skills in Design Patterns, Design Thinking, .NET Core, C#, Angular, TypeScript, Next.js, React, Node.js,
-        Java, Python, C, HTML, CSS, Bootstrap 5, Vim, Figma, UX, Git, GitHub, Gitlab, Ubuntu Linux,
-        Bash Shell, LaTeX.</p>
+      <p>I have skills in Design Patterns, Django, Python, TensorFlow, ASP.NET (C#), AngularJS, HTML, CSS, Boot- strap, JQuery, TypeScript, React, Node.js, Java, C, x86-64, Vim, Figma, UX and Design Thinking</p>
       <p class="text-center">If you're interested in learning more about what I can do for your business, check out my CV:</p>
-      <a href="assets/resume.pdf" download class="btn btn-outline-primary shadow-sm col-md-2 offset-md-5 col-10 offset-1">Resume</a>
+      <a href="assets/documents/resume.pdf" download class="btn btn-outline-primary shadow-sm col-md-2 offset-md-5 col-10 offset-1">Resume</a>
     </section>
 
     <section class="my-3 mx-md-1 p-4 background" id="contact">
       <h3 class="text-center flex-wrap p-3">Want to talk? Feel free to send me an email</h3>
       
-      <form class="row p-3" action="/send-email" method="post">
+      <form class="row p-3" id="myForm" action="https://formsubmit.co/jkru3@cs.washington.edu" method="post">
         <div class="mb-3 col-md-8 offset-md-2">
-          <input type="text" class="form-control shadow-sm" placeholder="Your name" id="name" name="name">
+          <input placeholder="Your name" id="name" class="form-control shadow-sm" name="name" required>
         </div>
         <div class="mb-3 col-md-8 offset-md-2">
-          <input type="text" class="form-control shadow-sm" placeholder="Your email address" id="email" name="email">
+          <input placeholder="Your email address" id="email" class="form-control shadow-sm" name="email" required>
         </div>
         <div class="mb-3 col-md-8 offset-md-2">
-          <textarea placeholder="Your message" class="form-control shadow-sm" placeholder="Your message" id="message" name="message"></textarea>
+          <textarea placeholder="Your message" id="message" class="form-control shadow-sm" name="message" required></textarea>
         </div>
-        <button type="submit" class="btn btn-outline-primary shadow-sm col-md-2 offset-md-5 col-10 offset-1">Send</button>
+        <button type="submit" id="sendEmail" class="btn btn-outline-primary shadow-sm col-md-2 offset-md-5 col-10 offset-1">Send</button>
       </form>
       
       <h3 class="text-center flex-wrap p-3">Or, find me on my socials</h3>
@@ -138,6 +141,7 @@
 </body>
 
 <script src="https://kit.fontawesome.com/8c8ef345c9.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="script.js"></script>

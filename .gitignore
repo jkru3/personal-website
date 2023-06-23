@@ -1,5 +1,4 @@
 node_modules/
 *.jpg
 *.pdf
-.env
 notes.txt
