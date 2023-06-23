@@ -20,7 +20,7 @@
           <h1 class="text-center mt-3 ">I'm Joey</h1>
         </div>
         <div class="col-5 d-sm-none text-sm-right">
-          <img src="assets/images/profile-picture.jpg" alt="Profile Picture" class="img-fluid rounded-circle">
+          <img src="./assets/images/profile-picture.jpg" alt="Profile Picture" class="img-fluid rounded-circle">
         </div>
       </div>
     </header>
@@ -37,7 +37,7 @@
       <div class="container">
         <div class="row flex-md-row d-md-flex">
           <div class="d-none d-sm-block col-sm-6 image-container d-flex align-items-stretch">
-            <img src="assets/images/full-portrait.jpg" alt="Large Picture" class="img-fluid">
+            <img src="./assets/images/full-portrait.jpg" alt="Large Picture" class="img-fluid">
           </div>
           <div class="col-sm-6 d-flex align-items-stretch">
             <div class="row h-100 w-100 align-items-center">
@@ -97,7 +97,7 @@
     <section class="my-3 mx-md-3 p-4 background" id="skills">
       <p>I have skills in Design Patterns, Django, Python, TensorFlow, ASP.NET (C#), AngularJS, HTML, CSS, Boot- strap, JQuery, TypeScript, React, Node.js, Java, C, x86-64, Vim, Figma, UX and Design Thinking</p>
       <p class="text-center">If you're interested in learning more about what I can do for your business, check out my CV:</p>
-      <a href="assets/documents/resume.pdf" download class="btn btn-outline-primary shadow-sm col-md-2 offset-md-5 col-10 offset-1">Resume</a>
+      <a href="./assets/documents/resume.pdf" download class="btn btn-outline-primary shadow-sm col-md-2 offset-md-5 col-10 offset-1">Resume</a>
     </section>
 
     <section class="my-3 mx-md-1 p-4 background" id="contact">
@@ -145,5 +145,28 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBEqn9ng12ODSymENwPX0b74JQr87TZkVA",
+    authDomain: "personal-website-9dc8d.firebaseapp.com",
+    projectId: "personal-website-9dc8d",
+    storageBucket: "personal-website-9dc8d.appspot.com",
+    messagingSenderId: "27671901897",
+    appId: "1:27671901897:web:e9944978aa63913f34bf18",
+    measurementId: "G-FYMT7M0QCR"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 
 </html>
