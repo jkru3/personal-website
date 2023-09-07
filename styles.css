@@ -8,11 +8,19 @@ body {
   background-repeat: no-repeat;
 }
 
+.custom-bg {
+  background-color: rgba(255, 255, 255, 0.5); /* White but somewhat transparent */
+  backdrop-filter: blur(10px); /* Blur the background */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Feathered border */
+  border-radius: 15px; /* Optional: Rounded corners */
+}
+
 .background {
   position: relative;
   overflow: hidden;
   border-radius: 1px;
   color: black;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .background::before {
@@ -30,7 +38,7 @@ body {
 /* Headers */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", serif; /* Replace with your desired serif font */
-  font-weight: 300;
+  font-weight: 500;
 }
 
 /* Body */
@@ -40,26 +48,24 @@ body {
   /* Additional styling for body content if desired */
 }
 
-/* Image and fade */
-.image-container {
-  overflow: hidden;
-  position: relative;
+/* In your CSS file */
+.profile-picture {
+  width: 65%;
+  min-width: 150px;
+  height: auto;
+}
+/* In your CSS file */
+.icon {
+  width: 30%;
+  min-width: 100px;
+  height: auto;
 }
 
-.image-container img {
-  position: relative;
-  top: 0px;
+.logo {
+  border-radius: 15px;  /* Rounds the corners */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);  /* Adds a feathered border */
 }
 
-.image-container:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 50%; /* Adjust the height of the fade as needed */
-  background: linear-gradient(to bottom, transparent, #fafbfd); /* Adjust the colors as needed */
-}
 
 /* For project cards */
 .card {
